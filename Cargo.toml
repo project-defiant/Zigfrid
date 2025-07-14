@@ -1,0 +1,15 @@
+[package]
+name = "zigfrid"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+unused = "allow"
+
+[dependencies]
+ollama-rs = "0.3.2"
+reqwest = "0.12.22"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.46.1", features = ["full"] }
